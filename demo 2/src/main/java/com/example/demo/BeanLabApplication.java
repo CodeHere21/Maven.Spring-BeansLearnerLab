@@ -9,5 +9,5 @@ public class BeanLabApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(BeanLabApplication.class, args);
 	}
-//testing
+
 }
