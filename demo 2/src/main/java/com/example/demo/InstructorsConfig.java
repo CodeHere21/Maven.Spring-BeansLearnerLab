@@ -11,7 +11,7 @@ import java.util.List;
 public class InstructorsConfig {
 
     @Primary
-    @Bean(name = "instructors")
+    @Bean("instructors")
     public Instructors instructors(){
         List<Instructor> instructorList= new ArrayList<>();
         Instructor dolio = new Instructor(301,"Dolio");
@@ -22,7 +22,7 @@ public class InstructorsConfig {
         return result;
     }
 
-    @Bean(name = "tcUsaInstructors()")
+    @Bean("tcUsaInstructors")
     public Instructors tcUsaInstructors(){
         List<Instructor> instructorList= new ArrayList<>();
         Instructor dan = new Instructor(303,"Dan");
@@ -33,7 +33,7 @@ public class InstructorsConfig {
         return result;
     }
 
-    @Bean(name = "tcUkInstructors()")
+    @Bean("tcUkInstructors")
     public Instructors tcUkInstructors(){
         List<Instructor> instructorUkList= new ArrayList<>();
         Instructor liz = new Instructor(305,"Liz");
